@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #339d9d, #3d52bf);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Form styling */
+.glass-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.glass-form input,
+.glass-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.glass-form input {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  outline: none;
+}
+
+.glass-form input::placeholder {
+  color: #eee;
+}
+
+.glass-form button {
+  background: #ffffff;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.glass-form button:hover {
+  background: #f0f0f0;
+}
+
+/* Expense list */
+.expense-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expense-card {
+  background: rgba(230, 228, 228, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.expense-card .details {
+  flex: 1;
+}
+
+.expense-card .details strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.expense-card .delete-btn {
+  background: #ff5c5c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Total */
+.total-amount {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+}
